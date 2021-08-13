@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Kalkulator</name>
+   <name>Foody</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,35 +10,29 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>c47f9215-c04d-4a0d-a3c4-cb8d7a7f8c66</testSuiteGuid>
+   <testSuiteGuid>8f0a1878-a6a4-4764-9663-79fd116d4a20</testSuiteGuid>
    <testCaseLink>
-      <guid>02b52ee1-6a20-4930-a61a-7fa280b857d0</guid>
+      <guid>d218bc6d-37dc-440c-ae53-ed39548003dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Kalkulator/StartApp</testCaseId>
+      <testCaseId>Test Cases/Foody/LoginFoody</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1f68b074-a074-4f3f-b103-36665a421c09</guid>
+      <guid>65f616d8-9a2c-4aae-9920-53e46031a72e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Kalkulator/Penjumlahan</testCaseId>
+      <testCaseId>Test Cases/Foody/PesanMakanan</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c89b95d0-12b8-4ffc-aa09-902bd8d3a73a</guid>
+      <guid>1051d975-62c4-49a8-b79b-44aaf2db0b2b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Kalkulator/Pengurangan</testCaseId>
+      <testCaseId>Test Cases/Foody/ReviewMakanan</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c5fd6ec1-c278-4af3-83c5-1786c88195e1</guid>
+      <guid>54054cf4-33d7-4329-bff7-e5fd1afacd67</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Kalkulator/Perkalian</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d9d70b06-dd67-4378-9ee0-bfcf568f06d1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Kalkulator/Pembagian</testCaseId>
+      <testCaseId>Test Cases/Foody/LogoutFoody</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

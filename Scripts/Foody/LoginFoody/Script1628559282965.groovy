@@ -17,5 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(GlobalVariable.app, false)
+Mobile.startApplication('E:\\Sekolah QA\\Materi\\Minggu 8 (Mobile Testing)\\apk\\foody.apk', false)
+
+Mobile.tapAndHold(findTestObject('Foody/Login/android.widget.LinearLayout'), 0, 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Foody/Login/android.widget.ImageView (1)'), 0)
+
+Mobile.tap(findTestObject('Foody/Login/android.widget.TextView - Login (2)'), 0)
+
+Mobile.tap(findTestObject('Foody/Login/android.widget.TextView - Connect with Facebook (1)'), 0)
+
+Mobile.setText(findTestObject('Foody/Login/android.widget.EditText - Telepon atau email (1)'), '', 0)
+
+Mobile.setEncryptedText(findTestObject('Foody/Login/Set Text - Password'), 'P9ET2sDE0SE=', 0)
+
+Mobile.tap(findTestObject('Foody/Login/btn - Masuk'), 0)
+
+Mobile.getText(findTestObject('Foody/Login/android.widget.TextView - Christin Dengen (1)'), 0)
 

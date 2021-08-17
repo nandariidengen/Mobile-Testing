@@ -14,26 +14,40 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.nio.file.Path as Path
+import java.nio.file.Paths as Paths
 
-Mobile.startApplication('E:\\Sekolah QA\\Materi\\Minggu 8 (Mobile Testing)\\apk\\foody.apk', false)
 
-Mobile.tapAndHold(findTestObject('Foody/Login/android.widget.LinearLayout'), 0, 0)
+String app = RunConfiguration.getProjectDir() + GlobalVariable.app
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.startApplication(app, false)
 
-Mobile.tap(findTestObject('Foody/Login/android.widget.ImageView (1)'), 0)
+//Path currentRelativePath = Paths.get("");
+//def s = currentRelativePath.toAbsolutePath().toString();
+//System.out.println("Current absolute path is: " + s);
+//s = s + "\\Data Files\\foody.apk"
+//System.out.println("Current absolute path is: " + s);
+//Mobile.startApplication(s, false)
+//Mobile.startApplication('C:\\Users\\user\\Katalon Studio\\Mobile Testing\\Data Files\\foody.apk', false)
 
-Mobile.tap(findTestObject('Foody/Login/android.widget.TextView - Login (2)'), 0)
+Mobile.tapAndHold(findTestObject('Foody/Login/btn-ok'), 0, 0)
 
-Mobile.tap(findTestObject('Foody/Login/android.widget.TextView - Connect with Facebook (1)'), 0)
+Mobile.tap(findTestObject('Foody/Login/lbl - profile'), 0)
 
-Mobile.setText(findTestObject('Foody/Login/android.widget.EditText - Telepon atau email (1)'), '', 0)
+Mobile.tap(findTestObject('Foody/Login/btn-login'), 0)
 
-Mobile.setEncryptedText(findTestObject('Foody/Login/Set Text - Password'), 'P9ET2sDE0SE=', 0)
+Mobile.tap(findTestObject('Foody/Login/btn-connect fb'), 0)
 
-Mobile.tap(findTestObject('Foody/Login/btn - Masuk'), 0)
+Mobile.setText(findTestObject('Foody/Login/txt-inputemail'), 'kenblesfor@gmail.com', 0)
 
-Mobile.getText(findTestObject('Foody/Login/android.widget.TextView - Christin Dengen (1)'), 0)
+Mobile.setEncryptedText(findTestObject('Foody/Login/txt-pass'), 'qOkq3tdv9y6iJuw7XdEYWAwdysQvTVxI', 0)
+
+Mobile.tap(findTestObject('Foody/Login/btn - masuk'), 0)
+
+Mobile.tapAndHold(findTestObject('Foody/Login/btn - lanjutkan'), 0, 0)
+
+Mobile.verifyElementText(findTestObject('Foody/Login/txt-name'), 'Christin Dengen')
 

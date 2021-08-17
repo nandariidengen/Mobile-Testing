@@ -17,17 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Foody/Logout/android.widget.ImageButton'), 0)
+Mobile.tap(findTestObject('Foody/Logout/btn-back1'), 0)
 
-Mobile.tap(findTestObject('Foody/Logout/android.widget.ImageButton'), 0)
+Mobile.tap(findTestObject('Foody/Logout/btn-back1'), 0)
 
-Mobile.tap(findTestObject('Foody/Logout/android.widget.ImageView (3)'), 0)
+Mobile.tap(findTestObject('Foody/Logout/btn-back2'), 0)
 
-Mobile.tap(findTestObject('Foody/Login/android.widget.ImageView (1)'), 0)
+Mobile.tap(findTestObject('Foody/Logout/btn-back3'), 0)
 
-Mobile.tap(findTestObject('Foody/Logout/android.widget.TextView - Log Out'), 0)
+Mobile.tap(findTestObject('Foody/Logout/txt-logout'), 0)
 
-Mobile.tap(findTestObject('Foody/Logout/android.widget.Button - Log Out'), 0)
+Mobile.tap(findTestObject('Foody/Logout/btn-logout'), 0)
 
-Mobile.getText(findTestObject('Foody/Logout/android.widget.TextView - Login'), 0)
+Mobile.getText(findTestObject('Foody/Logout/txt-verify-login'), 0)
 

@@ -17,13 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Foody/Order/android.widget.ImageView (1)'), 0)
+Mobile.tap(findTestObject('Foody/Login/lbl - home'), 0)
 
-Mobile.tap(findTestObject('Foody/Order/android.widget.TextView - Search for cuisine, name, address'), 0)
+Mobile.tap(findTestObject('Foody/Order/field-search-tap'), 0)
 
-Mobile.setText(findTestObject('Foody/Order/android.widget.EditText - Search for cuisine, name, address'), 'ice cream', 0)
+Mobile.setText(findTestObject('Foody/Order/txt-search'), 'ice cream', 0)
 
 Mobile.scrollToText('Today Coffee & Ice Cream')
 
-Mobile.tap(findTestObject('Foody/Order/android.widget.TextView - Today Coffee  Ice Cream'), 0)
+Mobile.tap(findTestObject('Foody/Order/lbl-name cafee'), 0)
+
+actual = Mobile.getText(findTestObject('Foody/Order/txt - verify today'), 0)
+
+Mobile.verifyMatch(actual, 'Today Coffee & Ice Cream', false)
+
+Mobile.verifyElementVisible(findTestObject('Foody/Order/txt - opening'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Foody/Order/txt - time'), 0)
 

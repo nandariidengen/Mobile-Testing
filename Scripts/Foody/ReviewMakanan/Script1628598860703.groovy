@@ -17,50 +17,52 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.LinearLayout'), 0)
+Mobile.tap(findTestObject('Foody/Review/lbl - review'), 0)
 
-Mobile.setText(findTestObject('Foody/Review/android.widget.EditText - Title (optional) (1)'), 'Taste', 0)
+Mobile.verifyElementText(findTestObject('Foody/Review/txt - verify today'), 'Today Coffee & Ice Cream')
 
-Mobile.setText(findTestObject('Foody/Review/android.widget.EditText - Please review more than 100 words, do not spam to get reward points (2)'), 
+Mobile.setText(findTestObject('Foody/Review/txt-title'), 'Taste', 0)
+
+Mobile.setText(findTestObject('Foody/Review/txt-description'), 
     'This is my favorite', 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Post'), 0)
+Mobile.tap(findTestObject('Foody/Review/btn-post'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Rate'), 0)
+Mobile.tap(findTestObject('Foody/Review/btn-rate'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - No. person'), 0)
+Mobile.tap(findTestObject('Foody/Review/txt-person'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.CheckedTextView - 8'), 0)
+Mobile.tap(findTestObject('Foody/Review/check-person'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Expense'), 0)
+Mobile.tap(findTestObject('Foody/Review/txt-expense'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.CheckedTextView - 500,000'), 0)
+Mobile.tap(findTestObject('Foody/Review/check-expense'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Come back'), 0)
+Mobile.tap(findTestObject('Foody/Review/txt-comeback'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.CheckedTextView - Sure'), 0)
+Mobile.tap(findTestObject('Foody/Review/check-comeback'), 0)
 
-Mobile.setSliderValue(findTestObject('Foody/Review/android.widget.SeekBar'), 70, 0)
+Mobile.setSliderValue(findTestObject('Foody/Review/slider-location'), 70, 0)
 
-Mobile.setSliderValue(findTestObject('Foody/Review/android.widget.SeekBar (1)'), 70, 0)
+Mobile.setSliderValue(findTestObject('Foody/Review/slider-price'), 70, 0)
 
-Mobile.setSliderValue(findTestObject('Foody/Review/android.widget.SeekBar (2)'), 70, 0)
+Mobile.setSliderValue(findTestObject('Foody/Review/slider-quality'), 70, 0)
 
-Mobile.setSliderValue(findTestObject('Foody/Review/android.widget.SeekBar (3)'), 70, 0)
+Mobile.setSliderValue(findTestObject('Foody/Review/slider-service'), 70, 0)
 
-Mobile.setSliderValue(findTestObject('Foody/Review/android.widget.SeekBar (4)'), 70, 0)
+Mobile.setSliderValue(findTestObject('Foody/Review/slider-decoration'), 70, 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Done'), 0)
+Mobile.tap(findTestObject('Foody/Review/btn-done'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.TextView - Post'), 0)
+Mobile.tap(findTestObject('Foody/Review/btn-post'), 0)
 
-Mobile.tap(findTestObject('Foody/Review/android.widget.Button - Close'), 0)
+Mobile.tap(findTestObject('Foody/Review/btn-close'), 0)
 
-Mobile.verifyElementText(findTestObject('Foody/Review/android.widget.TextView - Taste'), 'Taste')
+Mobile.verifyElementText(findTestObject('Foody/Review/txt-verify-title'), 'Taste')
 
-Mobile.verifyElementText(findTestObject('Foody/Review/android.widget.TextView - This is my favorite'), 'This is my favorite')
+Mobile.verifyElementText(findTestObject('Foody/Review/txt-verify-desc'), 'This is my favorite')
 
-Mobile.verifyElementVisible(findTestObject('Foody/Review/android.widget.TextView - View translations'), 0)
+Mobile.verifyElementVisible(findTestObject('Foody/Review/txt-verify-translation'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Foody/Review/android.widget.TextView - Like'), 0)
+Mobile.verifyElementVisible(findTestObject('Foody/Review/btn-verify-like'), 0)
 

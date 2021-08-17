@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\user\\Katalon Studio\\Mobile Testing\\Data Files\\Calculator.apk'</initValue>
+      <initValue>'\\\\Data Files\\\\foody.apk'</initValue>
       <name>app</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

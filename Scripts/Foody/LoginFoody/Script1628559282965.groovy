@@ -20,7 +20,6 @@ import org.openqa.selenium.Keys as Keys
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
-
 String app = RunConfiguration.getProjectDir() + GlobalVariable.app
 
 Mobile.startApplication(app, false)
@@ -32,7 +31,6 @@ Mobile.startApplication(app, false)
 //System.out.println("Current absolute path is: " + s);
 //Mobile.startApplication(s, false)
 //Mobile.startApplication('C:\\Users\\user\\Katalon Studio\\Mobile Testing\\Data Files\\foody.apk', false)
-
 Mobile.tapAndHold(findTestObject('Foody/Login/btn-ok'), 0, 0)
 
 Mobile.tap(findTestObject('Foody/Login/lbl - profile'), 0)
@@ -41,9 +39,9 @@ Mobile.tap(findTestObject('Foody/Login/btn-login'), 0)
 
 Mobile.tap(findTestObject('Foody/Login/btn-connect fb'), 0)
 
-Mobile.setText(findTestObject('Foody/Login/txt-inputemail'), 'kenblesfor@gmail.com', 0)
+Mobile.setText(findTestObject('Foody/Login/txt-inputemail'), 'inputemail', 0)
 
-Mobile.setEncryptedText(findTestObject('Foody/Login/txt-pass'), 'qOkq3tdv9y6iJuw7XdEYWAwdysQvTVxI', 0)
+Mobile.setEncryptedText(findTestObject('Foody/Login/txt-pass'), '/X0fKMoFo2pQrzvgNIPtsA==', 0)
 
 Mobile.tap(findTestObject('Foody/Login/btn - masuk'), 0)
 
